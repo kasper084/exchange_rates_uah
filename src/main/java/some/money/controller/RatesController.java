@@ -10,12 +10,12 @@ import java.io.IOException;
 import java.util.List;
 
 @RestController
-public class Controller {
+public class RatesController {
 
     @Autowired
     private Parser parser;
 
-    @RequestMapping("/money")
+    @RequestMapping("/rates")
     public List<Money> getRates() throws IOException {
         return parser.getRates();
     }
